@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool: Default
+
+steps:
+
+- script: C:\PruebaPipeline
+  workingDirectory: #
+  displayName: #
+  failOnStderr: #
+  env: { string: string } # mapping of environment variables to add
+
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: 
+    unzip ApiValidation.rar
+  displayName: 'Decomprimiendo ApiValidation'
