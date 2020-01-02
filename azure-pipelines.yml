@@ -10,10 +10,10 @@ pool: Default
 
 steps:
 
-- script: C:\PruebaPipeline
-  workingDirectory: #
-  displayName: #
-  failOnStderr: #
+- script: 
+  workingDirectory: C:\PruebaPipeline
+  displayName: 'Cambiando de directorio'
+  failOnStderr: 'No se pudo cambiar de directorio'
   env: { string: string } # mapping of environment variables to add
 
 - script: echo Hello, world!
